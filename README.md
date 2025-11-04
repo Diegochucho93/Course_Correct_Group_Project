@@ -1,20 +1,32 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# CourseCorrect: The Personalized Degree Path Assistant
 
-# Run and deploy your AI Studio app
+**Course:** University of Texas at Arlington: FA25 INSY 4391-Artificial Intelligence for Business.
 
-This contains everything you need to run your app locally.
+## 🎯 Project Goal
 
-View your app in AI Studio: https://ai.studio/apps/drive/1OFCxWsMzfk8OnIeQWnG9PpsZA5pdsch9
+This repository contains the code for **CourseCorrect**, a prototype AI assistant designed to help university students navigate complex degree requirements. The goal is to solve common issues like missed prerequisites, scheduling conflicts, and inefficient course planning that often lead to delayed graduation.
 
-## Run Locally
+## Problem Statement
 
-**Prerequisites:**  Node.js
+Students struggle to interpret complex degree plans and track prerequisites, while academic advisors are overburdened with manual schedule checks. This inefficiency leads to frustrated students, higher advising workloads, and lower graduation rates for the university.
 
+## Our Solution
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+CourseCorrect acts as a virtual academic assistant. By leveraging a Generative AI (LLM), it analyzes a student's major, completed courses, and transfer credits to generate an optimal, personalized semester-by-semester schedule.
+
+This tool provides clear, explainable recommendations to keep students on track and frees advisors to focus on high-impact career guidance.
+
+## 🛠️ Prototype Scope (This Semester)
+
+For this course project, we are developing a prototype focused on the core planning and scheduling functions.
+
+**Key Features:**
+* **Analyzes Degree Plans:** Understands the logic of a simplified degree plan (e.g., Computer Science BS).
+* **Tracks Student Progress:** Takes a student's completed courses as input.
+* **Generates Schedules:** Recommends an optimal, conflict-free schedule for the upcoming semester.
+* **Validates Prerequisites:** Ensures all recommendations are valid based on the student's history.
+* **Provides Explanations:** Includes a rationale for its suggestions (e.g., *“You should take INSY 3300 next to unlock upper-level electives.”*).
+
+**Constraints:**
+* This prototype will **not** integrate with the university's live registration system.
+* Data is limited to public course catalogs and synthetic (dummy) student data for testing.
